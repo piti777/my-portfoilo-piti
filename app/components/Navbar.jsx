@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
+import Logo from "./Logo";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,11 +37,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         }`}
       >
         <a href="#top">
-          <Image 
-            src={isDarkMode ? assets.logo_dark : assets.logo}
-            alt=""
-            className='w-28 alt="" cursor-pointer mr-14'
-          />
+          <Logo isDarkMode={isDarkMode}/>
         </a>
 
         <ul
