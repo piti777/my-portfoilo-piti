@@ -37,7 +37,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         }`}
       >
         <a href="#top">
-          <Logo isDarkMode={isDarkMode}/>
+          <Logo isDarkMode={isDarkMode} />
         </a>
 
         <ul

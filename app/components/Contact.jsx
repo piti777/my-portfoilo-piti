@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 import { useState } from "react";
-import {motion} from "motion/react"
+import { motion } from "motion/react";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -29,60 +29,64 @@ const Contact = () => {
       setResult(data.message);
     }
     return (
-    <form onSubmit={onSubmit}>
-      <input type="text" name="name" required/>
-      <input type="email" name="email" required/>
-      <textarea name="message" required></textarea>
-      <button type="submit">Submit Form</button>
-      <span>{result}</span>
-    </form>
-  );
-}
-  
-
-  
+      <form onSubmit={onSubmit}>
+        <input type="text" name="name" required />
+        <input type="email" name="email" required />
+        <textarea name="message" required></textarea>
+        <button type="submit">Submit Form</button>
+        <span>{result}</span>
+      </form>
+    );
+  };
 
   return (
     <motion.div
-    initial={{opacity:0}}
-      whileInView={{opacity:1}}
-      transition={{duration:1}}
-
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
       id="contact"
-      className='w-full px-[12%] px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
+      className='w-full  px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'
     >
-      <motion.h4 
-      initial={{y:-20,opacity:0}}
-      whileInView={{y:0,opacity:1}}
-      transition={{delay:0.3,duration:0.5}}
-      className="text-center mb-2 text-lg font-Ovo">Connect with me</motion.h4>
+      <motion.h4
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        className="text-center mb-2 text-lg font-Ovo"
+      >
+        Connect with me
+      </motion.h4>
 
-      <motion.h2 
-      initial={{y:-20,opacity:0}}
-      whileInView={{y:0,opacity:1}}
-      transition={{delay:0.3,duration:0.5}}
-      className=" text-center text-5xl font-Ovo ">Get in touch</motion.h2>
+      <motion.h2
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        className=" text-center text-5xl font-Ovo "
+      >
+        Get in touch
+      </motion.h2>
 
-      <motion.p 
-      initial={{opacity:0}}
-      whileInView={{y:0,opacity:1}}
-      transition={{delay:0.7,duration:0.5}}
-      className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.7, duration: 0.5 }}
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
+      >
         I`d love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.
       </motion.p>
 
-      <motion.form 
-      initial={{opacity:0}}
-      whileInView={{opacity:1}}
-      transition={{delay:0.9,duration:0.5}}
-      onSubmit={onSubmit} className="max-w-2xl mx-auto ">
+      <motion.form
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.9, duration: 0.5 }}
+        onSubmit={onSubmit}
+        className="max-w-2xl mx-auto "
+      >
         <div className="grid grid-cols-auto gap-6 mt-10 mb-8">
           <motion.input
-          initial={{x:-50, opacity:0}}
-          whileInView={{x:0,opacity:1}}
-          transition={{delay:1.1,duration:0.6 }}
-
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 1.1, duration: 0.6 }}
             type="text"
             placeholder="Enter your name"
             required
@@ -91,9 +95,9 @@ const Contact = () => {
           />
 
           <motion.input
-            initial={{x:50, opacity:0}}
-            whileInView={{x:0,opacity:1}}
-            transition={{delay:1.2,duration:0.6 }}
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 1.2, duration: 0.6 }}
             type="email"
             placeholder="Enter your email"
             required
@@ -102,9 +106,9 @@ const Contact = () => {
           />
         </div>
         <motion.textarea
-        initial={{x:100, opacity:0}}
-        whileInView={{x:0,opacity:1}}
-        transition={{delay:1.3,duration:0.6 }}
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1.3, duration: 0.6 }}
           row="6"
           placeholder="Enter your message"
           required
@@ -113,8 +117,8 @@ const Contact = () => {
         ></motion.textarea>
 
         <motion.button
-        whileHover={{scale:1.05}}
-        transition={{duration:0.3}}
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
           type="submit"
           className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
         >
