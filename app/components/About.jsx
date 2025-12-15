@@ -56,10 +56,10 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-Ovo">
-            I am experienced Frontend Developer with over a decade of
-            professional experience in the field. Througout my career, I have
-            had the privilege of collaborating with prestigious organizations,
-            contrbuting to their success and growth.
+            I am a fourth-year student in the Faculty of Science at Chiang Mai
+            Rajabhat University, currently undertaking an internship at Crafting
+            Lab. I have been practicing web development by creating portfolio
+            websites using various programming languages.
           </p>
 
           <motion.ul
